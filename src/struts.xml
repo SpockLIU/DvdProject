@@ -14,4 +14,10 @@
             <result name="error">/index.jsp</result>
         </action>
     </package>
+    
+    <package name="dvd" extends="struts-default" namespace="/">
+    	<action name="*_Dvd" class="biz.DvdBiz" method="{1}Dvd">
+    		<result name="success">/Dvd{1}Success.jsp</result>
+    	</action>
+    </package>
 </struts>

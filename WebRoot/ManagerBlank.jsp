@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>管理员操作页面</title>
 </head>
 <body>
-
+这里是管理员操作页面。
 </body>
 </html>
