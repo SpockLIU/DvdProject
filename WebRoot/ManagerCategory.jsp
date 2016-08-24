@@ -11,12 +11,17 @@
 <html>
 <head>
     <title>管理员操作分类界面</title>
+    <style type="text/css">
+    	.type{
+    		list-style-type: none;
+    	}
+    </style>
 </head>
 <body>
 <label>欢迎您：<s:property value="#session.manager.managerName" /> </label>
-<ul>
+<ul class="type">
 	<li><a href="<%=context %>/addDvd.jsp" target="target">添加DVD</a></li>
-	<li></li>
+	<li>查看DVD</li>
 	<li></li>
 	<li></li>
 </ul>
