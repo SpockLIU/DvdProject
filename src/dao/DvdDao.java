@@ -105,4 +105,25 @@ public class DvdDao {
 		return dvd;
 	}
 
+	public void modifyDvd(Dvd dvd) {
+		Connection conn = sqlConn.getConn();
+		String sql = "update dvd set dvd_name = ?, dvd_price = ?,  dvd_status = ?, dvd_type = ?, dvd_rent_time = ?, dvd_rent_price = ? where dvd_id = ?";
+		PreparedStatement ps = null;
+		try {
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, dvd.getDvdName());
+			ps.setDouble(2, dvd.getDvdPrice());
+			ps.setInt(3, dvd.getDvdStatus());
+			ps.setInt(4, dvd.getDvdType());
+			ps.setInt(5, dvd.getDvdRentTime());
+			ps.setDouble(6, dvd.getDvdRentPrice());
+			ps.setInt(7, dvd.getDvdId());
+			ps.executeUpdate();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		sqlConn.closeAll(null, ps, conn);
+		
+	}
+
 }

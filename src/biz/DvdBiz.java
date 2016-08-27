@@ -57,6 +57,14 @@ public class DvdBiz extends ActionSupport{
 		return SUCCESS;
 	}
 	
+	public String modifyDvd(){
+		DvdDao dDao = new DvdDao();
+		for(Dvd d : dvds){
+			dDao.modifyDvd(d);
+		}
+		return SUCCESS;
+	}
+	
 	public List<Dvd> getDvds() {
 		return dvds;
 	}
