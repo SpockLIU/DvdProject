@@ -5,8 +5,8 @@ public class Dvd {
 	private int dvdId;
 	private String dvdName;
 	private double dvdPrice;
-	private int dvdStatus;
-	private int dvdType;
+	private Integer dvdStatus;
+	private Integer dvdType;
 	private int dvdRentTime;
 	private double dvdRentPrice;
 	
@@ -31,16 +31,16 @@ public class Dvd {
 	public void setDvdPrice(double dvdPrice) {
 		this.dvdPrice = dvdPrice;
 	}
-	public int getDvdStatus() {
+	public Integer getDvdStatus() {
 		return dvdStatus;
 	}
-	public void setDvdStatus(int dvdStatus) {
+	public void setDvdStatus(Integer dvdStatus) {
 		this.dvdStatus = dvdStatus;
 	}
-	public int getDvdType() {
+	public Integer getDvdType() {
 		return dvdType;
 	}
-	public void setDvdType(int dvdType) {
+	public void setDvdType(Integer dvdType) {
 		this.dvdType = dvdType;
 	}
 	public int getDvdRentTime() {

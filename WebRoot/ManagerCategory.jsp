@@ -21,7 +21,7 @@
 <label>欢迎您：<s:property value="#session.manager.managerName" /> </label>
 <ul class="type">
 	<li><a href="<%=context %>/addDvd.jsp" target="target">添加DVD</a></li>
-	<li>查看DVD</li>
+	<li><a href="<%=context %>/queryDvd.jsp" target="target">查看DVD</a></li>
 	<li></li>
 	<li></li>
 </ul>

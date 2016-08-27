@@ -65,7 +65,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   					<td><s:textfield class="name" name="dvds[0].dvdName" theme="simple"/></td>
   					<td><s:textfield class="price" name="dvds[0].dvdPrice" theme="simple"/></td>
   					<td><s:select class="type" name="dvds[0].dvdType"  list="#{1:'爱情',2:'喜剧',3:'剧情',4:'动作'}" listkey="key" listValue="value" theme="simple"/>
-  					<td><s:textfield class="rentPrice" name="dvds[0].dvdRentPrice" theme="simple"/>
+  					<td><s:textfield class="rentPrice" name="dvds[0].dvdRentPrice" theme="simple"/></td>
   				</tr>
   				
   			</table>
